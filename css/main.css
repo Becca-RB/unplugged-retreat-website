@@ -87,6 +87,250 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*****************BASE STYLES***************/
+
+header, footer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+    
+}
+
+/****************HEADER STYLES*************/
+
+header {
+  
+
+}
+
+.hero-area{}
+
+header .content-wrapper {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.header-divider {}
+
+header nav {
+     display:flex;
+     justify-content: space-around;
+     flex-wrap: row wrap;
+     width:100%;
+}
+
+
+/**************FOOTER STYLES**************/
+
+.content-wrapper {
+  
+}
+
+.footer-content{}
+
+
+.contact {
+  
+}
+
+address {
+ 
+}
+
+address h3 {}
+
+.social {
+ 
+}
+
+.social-icons {}
+
+.copyright p {
+  
+}
+
+.copyright {
+  width:100%;
+}
+
+.copyright h4 {
+}
+
+
+
+/**************MOBILE STYLES- HOMEPAGE************/
+
+/*****MAIN*****/
+
+.hero-area {}
+
+#slogan {}
+ 
+/*****aside section*****/
+
+.aside {
+  display: flex;
+  flex-flow:row wrap;
+}
+
+.content-wrapper {
+  display:flex;
+  flex-flow: row wrap;
+}
+
+.form-description {}
+
+.content-info{}
+
+.form{}
+
+/*****features section*****/
+
+.features{
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+
+.content-wrapper{
+}
+
+.features-items {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+article {
+}
+
+.fontawesome-icon {
+}
+
+.features-item-description {
+  
+}
+
+/*****reviews section*****/
+
+.reviews {
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.content-wrapper{
+  display:flex;
+}
+
+article #reviews {}
+
+.sub-heading {}
+
+h2 {}
+
+p {}
+
+
+/**********MOBILE STYLES ABOUT PAGE*************/
+
+/*****MAIN*****/
+
+/*****mission section*****/
+
+.mission {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.content-wrapper{
+  display: flex;
+}
+
+.mission-content {}
+
+.mission-content h1 {}
+
+.mission-content p {}
+
+/*****map section*****/
+
+figure []
+
+/*****contact section*****/
+
+.contact-section {}
+
+.content-wrapper h1 {}
+
+.content-wrapper h3 {}
+
+address {}
+
+#general-info {}
+ 
+#facilitator {}
+
+
+
+
+/********MOBILE STYLES FAQ PAGE*********/
+
+/*****MAIN*****/
+
+.questions {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.content-wrapper {
+  
+}
+
+.questions-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.questions-content h1 {}
+
+.faq-question {
+
+}
+
+.faq-question h2 {}
+
+.faq-question p {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
