@@ -100,8 +100,7 @@ header, footer {
 /****************HEADER STYLES*************/
 
 header {
-  
-
+  padding:15px 0;
 }
 
 .hero-area{}
@@ -111,29 +110,50 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
-.header-divider {}
+.header-divider {
+  width:100%;
+}
 
 header nav {
      display:flex;
      justify-content: space-around;
      flex-wrap: row wrap;
-     width:100%;
+     width:60%;
+}
+
+header nav ul {
+  width:45%;
+  padding:0px;
+  margin:15px 0;
+}
+
+nav ul li {
+  display: inline;
 }
 
 
 /**************FOOTER STYLES**************/
 
 .content-wrapper {
-  
+  width:55%;
 }
 
 .footer-content{}
 
+footer .content-wrapper{
+  width:55%;
+  margin:50px 0;
+}
+
 
 .contact {
-  
+}
+
+.contact p {
+  padding-bottom:15px;
 }
 
 address {
@@ -146,14 +166,19 @@ address h3 {}
  
 }
 
+#social-label{
+  padding:15px 0 15px 0;
+}
+
 .social-icons {}
 
-.copyright p {
+footer p {
+  margin:0;
   
 }
 
 .copyright {
-  width:100%;
+  padding-top:45px;
 }
 
 .copyright h4 {
@@ -167,7 +192,10 @@ address h3 {}
 
 .hero-area {}
 
-#slogan {}
+#slogan {
+  margin:15px;
+  padding:15px;
+}
  
 /*****aside section*****/
 
@@ -179,6 +207,8 @@ address h3 {}
 .content-wrapper {
   display:flex;
   flex-flow: row wrap;
+  width:90%;
+  margin:20px 15px 45px 15px;
 }
 
 .form-description {}
@@ -196,6 +226,12 @@ address h3 {}
 }
 
 .content-wrapper{
+  width:90%;
+}
+
+.features article {
+  width:55%;
+
 }
 
 .features-items {
@@ -205,10 +241,19 @@ address h3 {}
   flex-flow: row wrap;
 }
 
+.features h2{
+  margin-bottom: 50px;
+}
+.features p{
+  margin:0;
+}
+
 article {
+  padding-bottom: 45px;
 }
 
 .fontawesome-icon {
+  padding-bottom: 25px;
 }
 
 .features-item-description {
@@ -224,13 +269,26 @@ article {
 
 .content-wrapper{
   display:flex;
+  width:90%;
+  margin: 45px 15px 45px 15px;
+}
+
+.reviews h3{
+  width:45%;
+  padding-top:18px;
+  padding-bottom: 25px;
 }
 
 article #reviews {}
 
-.sub-heading {}
+.sub-heading {
+  
+}
 
-h2 {}
+h2 {
+  margin-right: 25px;
+  padding:5px;
+}
 
 p {}
 
@@ -252,9 +310,14 @@ p {}
 
 .mission-content {}
 
-.mission-content h1 {}
+.mission-content h1 {
+  margin:0;
+  padding-bottom:15px;
+}
 
-.mission-content p {}
+.mission-content p {
+  margin-bottom:0;
+}
 
 /*****map section*****/
 
@@ -303,7 +366,9 @@ address {}
 
 .faq-question h2 {}
 
-.faq-question p {}
+.faq-question p {
+  margin-bottom:0;
+}
 
 
 
