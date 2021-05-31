@@ -519,7 +519,7 @@ address {}
 
   footer .copyright {
       width:648px;
-      padding-left:290px;
+      text-align: center;
   }
      
     /**HOME PAGE**/
@@ -648,7 +648,105 @@ address {}
  @media screen and (min-width: 1200px) {
     
  /*Desktop styles here*/
-    
+
+ /**General Styles**/
+
+  .content-wrapper{
+  max-width: 960px;
+  margin: 115px 0;
+  }
+
+/**Header**/
+
+  header .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+/**HOME PAGE**/
+
+/**Hero**/
+
+.hero-area h1{
+  width: 665px;
+  text-align:center;
+}
+
+/**Aside**/
+aside .content-wrapper{
+  display:flex;
+  justify-content: space-evenly;
+  padding-left:200px;
+}
+
+/**Features**/
+
+.features{
+  display:flex;
+  justify-content: center;
+}
+
+.features article{
+  display:flex;
+  flex-basis: auto;
+}
+
+.features h2{
+  width:880px;
+}
+/**Reviews**/
+
+.reviews{
+  display: flex;
+  justify-content: center;
+}
+
+.reviews article div{
+  display:flex;
+  width:450px;
+  flex-wrap:wrap;
+  margin: 25px 30px 35px 50px;
+}
+
+/**ABOUT PAGE**/
+
+.mission .content-wrapper{
+  display:flex;
+  justify-content: center;
+  margin:50px 100px 50px 100px
+}
+
+.mission h1, .contact-section .content-wrapper h1{
+  display:flex;
+  width:960px;
+}
+
+.contact-section .content-wrapper{
+  display:flex;
+  justify-content:space-evenly;
+  margin: 115px;}
+
+
+/**FAQ PAGE**/
+
+.faq, .faq .content-wrapper{
+  display:flex;
+  justify-content: center;
+  width:100%;
+}
+
+.faq h1{
+  width:100%;
+}
+.questions-content{
+  display:flex;
+  justify-content: space-between;
+}
+
+
+}
+
+
     }
 
 @media print,
