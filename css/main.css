@@ -87,6 +87,92 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* General Styles */
+ 
+html {
+	font-size: 16px;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+ 
+header{
+  background-color: #202322;
+}
+
+footer{
+  background-color: #202322;
+}
+
+.copyright h4{
+  font-size: .75em;
+  font-weight:lighter;
+}
+
+ul, 
+li {
+  font-weight: bold;
+ 
+}
+ 
+a {
+	color: #e2e3ed;
+  text-decoration: none;
+}
+ 
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  color:#e2e3ed;
+}
+ 
+h2{
+  color:#e2e3ed;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+
+h4{
+  
+}
+
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size:;
+  color:#e2e3ed;
+}
+ 
+p {
+  color:#e2e3ed;
+  font-weight: lighter;
+	font-size: 1em;
+  line-height: 1.5em;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+ font-style:normal;
+
+}
+
+.content-wrapper {
+}
+
+.mission, .faq, aside{
+  background-color: #527158;
+}
+
+
 /*****************BASE STYLES***************/
 
 header, footer {
@@ -122,16 +208,21 @@ header nav {
      justify-content: space-around;
      flex-wrap: row wrap;
      width:60%;
+     margin-right: 50px;
 }
 
 header nav ul {
+  display:flex;
+  justify-content: space-between;
   width:45%;
   padding:0px;
   margin:15px 0;
 }
 
 nav ul li {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  margin:10px;
 }
 
 
@@ -141,7 +232,11 @@ nav ul li {
   width:55%;
 }
 
-.footer-content{}
+.footer-content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
 footer .content-wrapper{
   width:55%;
@@ -150,6 +245,7 @@ footer .content-wrapper{
 
 
 .contact {
+text-align: center;
 }
 
 .contact p {
@@ -163,7 +259,8 @@ address {
 address h3 {}
 
 .social {
- 
+  text-align: center;
+ width:45%;
 }
 
 #social-label{
@@ -179,6 +276,8 @@ footer p {
 
 .copyright {
   padding-top:45px;
+  width: 90%;
+  text-align: center;
 }
 
 .copyright h4 {
@@ -338,6 +437,10 @@ address {}
 
 /********MOBILE STYLES FAQ PAGE*********/
 
+header nav{
+  margin-right:15px;
+}
+
 /*****MAIN*****/
 
 .faq {
@@ -346,6 +449,7 @@ address {}
 }
 
 .content-wrapper {
+  display:flex;
   
 }
 
@@ -360,7 +464,7 @@ address {}
 
 }
 
-.faq-content h2 {}
+.faq-content h4 {}
 
 .faq-content p {
   margin-bottom:0;
@@ -486,13 +590,13 @@ address {}
     header nav {
       display:flex;
       justify-content: center;
-      width: 350px;
+      width: 55%;
     }
 
     header nav ul {
       display:flex;
       justify-content: center;
-      padding-left:200px;
+      padding-left:325px;
     }
     
     header nav ul li{
@@ -502,14 +606,15 @@ address {}
      /**FOOTER**/
 
      footer .content-wrapper {
-      width: 648px;
+      width: 90%;
       margin: 100px 0;
   }
   
   .footer-content {
       display:flex;
+      flex-flow: row;
       justify-content: center;
-      align-items:flex-start;
+
   }
 
   footer .contact {
@@ -518,7 +623,7 @@ address {}
   }
 
   footer .copyright {
-      width:648px;
+      width:100%;
       text-align: center;
   }
      
@@ -539,7 +644,7 @@ address {}
     aside .content-wrapper .form-description, 
     aside .content-wrapper .form{
       margin:0;
-      width: 320px;
+      width: 50%;
     }
 
     /**Features**/
@@ -553,12 +658,12 @@ address {}
       justify-content: center;
       align-items:center;
       flex-flow:row wrap;
-      width:300px;
+      width:50%;
       flex-basis:250px;
     }
 
     .features .features-item-description{
-      width:200px;
+      width:50%;
     }
 
     /**Reviews**/
@@ -570,7 +675,7 @@ address {}
     }
 
     .reviews article div{
-      width:325px;
+      width:50%;
       padding-left:300px;
     }
 
@@ -580,7 +685,7 @@ address {}
     /**Mission**/
 
     .mission {
-      margin: 100px 50px 100px 50px;
+      
     }
 
     .mission-content {
@@ -590,9 +695,13 @@ address {}
   }
 
   .mission-content p {
-      width: 320px;
+      width: 50%;
   }
 
+  .mission .content-wrapper{
+    margin:50px;
+  }
+  
   /**Contact**/
 
   .contact-section{
@@ -600,11 +709,11 @@ address {}
   }
 
   .contact-section .content-wrapper h2 {
-      width: 640px;
+      width:90%;
   }
 
   .contact-section address{
-    width:300px;
+    width:50%;
   }
 
   .general-info {
@@ -624,6 +733,9 @@ address {}
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 150px;
+  width:90%;
 }
 
 
@@ -652,8 +764,9 @@ address {}
  /**General Styles**/
 
   .content-wrapper{
-  max-width: 960px;
+  max-width: 90%;
   margin: 115px 0;
+  display:flex;
   }
 
 /**Header**/
@@ -663,13 +776,28 @@ address {}
     justify-content: space-between;
   }
 
+  /**Footer**/
+   
+  footer .content-wrapper .footer-content{
+    display:flex;
+    justify-content: space-evenly;
+    width:90%;
+  }
+
 /**HOME PAGE**/
 
 /**Hero**/
 
 .hero-area h1{
-  width: 665px;
-  text-align:center;
+  width: 75%;
+  text-align:left;
+}
+
+#slogan{
+  text-align: left;
+  display: flex;
+  width: 30%;
+  padding-left: 100px;
 }
 
 /**Aside**/
@@ -684,6 +812,7 @@ aside .content-wrapper{
 .features{
   display:flex;
   justify-content: center;
+  margin:0;
 }
 
 .features article{
@@ -691,9 +820,18 @@ aside .content-wrapper{
   flex-basis: auto;
 }
 
-.features h2{
-  width:880px;
+.features-items {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-left: 100px;
 }
+
+.features h2 {
+width: 60%;
+padding-left:50px;
+}
+
 /**Reviews**/
 
 .reviews{
@@ -703,7 +841,7 @@ aside .content-wrapper{
 
 .reviews article div{
   display:flex;
-  width:450px;
+  width:50%;
   flex-wrap:wrap;
   margin: 25px 30px 35px 50px;
 }
@@ -718,7 +856,11 @@ aside .content-wrapper{
 
 .mission h1, .contact-section .content-wrapper h1{
   display:flex;
-  width:960px;
+  width:100%;
+}
+
+.contact-section address #facilitator{
+  padding-right: 30px;
 }
 
 .contact-section .content-wrapper{
@@ -726,6 +868,10 @@ aside .content-wrapper{
   justify-content:space-evenly;
   margin: 115px;}
 
+.contact-section address h3{
+  text-align: center;
+  padding-right:75px;
+}
 
 /**FAQ PAGE**/
 
