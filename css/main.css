@@ -775,10 +775,8 @@ header nav{
 
 .questions-content{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  width: 90%;
-  margin: 0 50px 0 150px;
+  padding-left: 150px;
+  flex-direction: column;
 }
 
 .faq .content-wrapper {
@@ -966,9 +964,11 @@ padding-left:50px;
 }
 
 .questions-content{
-  display:flex;
-  justify-content: space-between;
-  margin:0;
+  flex-flow: row wrap;
+  display: flex;
+  padding-left: 0px;
+  margin: 0;
+  justify-content: space-around;
 }
 
     }
