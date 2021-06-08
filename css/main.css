@@ -127,11 +127,16 @@ h1 {
   font-size: 2em;
   color:#e2e3ed;
 }
+
+.faq h1{
+  font-weight: lighter;
+}
  
 h2{
   color:#e2e3ed;
   font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
+  font-weight: lighter;
 }
 
 h4{
@@ -143,6 +148,7 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size:;
   color:#e2e3ed;
+  font-weight: lighter;
 }
  
 p {
@@ -151,7 +157,11 @@ p {
 	font-size: 1em;
   line-height: 1.5em;
 }
- 
+
+.faq-content p{
+  line-height: normal;
+}
+
 img {
  
 }
@@ -166,12 +176,18 @@ address {
 }
 
 .content-wrapper {
+  width: 90%;
+  margin: 50px 0;
 }
+
 
 .mission, .faq, aside{
   background-color: #527158;
 }
 
+.mission h1, .contact-section h1{
+  font-weight:lighter;
+}
 
 /*****************BASE STYLES***************/
 
@@ -198,6 +214,7 @@ header .content-wrapper {
   flex-flow: row wrap;
   margin: 0;
 }
+
 
 .header-divider {
   width:100%;
@@ -281,6 +298,32 @@ footer p {
 }
 
 .copyright h4 {
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 
@@ -568,7 +611,7 @@ header nav{
 
     .content-wrapper{
       max-width: 640px;
-      margin:100px 0;
+      margin:100p 0;
     }
      
     /**HEADER**/
@@ -639,6 +682,7 @@ header nav{
       flex-flow: row wrap;
       margin:50px 0;
       padding-left:100px;
+      padding-bottom:30px;
     }
 
     aside .content-wrapper .form-description, 
@@ -730,16 +774,14 @@ header nav{
   /**FAQ**/
 
 .questions-content{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 150px;
-  width:90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 50px 0 150px;
 }
 
-
-  .faq .content-wrapper {
+.faq .content-wrapper {
     display:flex;
     justify-content: space-between;
 }
@@ -748,6 +790,13 @@ header nav{
     display:flex;
     flex-flow:row wrap;
     flex-basis: 40%;
+}
+
+.faq .content-wrapper h1{
+display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-left: 80px;
 }
 
 .faq h2 {
@@ -776,6 +825,10 @@ header nav{
     justify-content: space-between;
   }
 
+  a{
+    padding-left:40px;
+  }
+
   /**Footer**/
    
   footer .content-wrapper .footer-content{
@@ -802,9 +855,15 @@ header nav{
 
 /**Aside**/
 aside .content-wrapper{
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
-  padding-left:200px;
+  padding-bottom: 30px;
+  padding-left:50px;
+}
+
+aside .content-wrapper .form-description, aside .content-wrapper .form {
+  margin: 0;
+  width: 30%;
 }
 
 /**Features**/
@@ -818,6 +877,7 @@ aside .content-wrapper{
 .features article{
   display:flex;
   flex-basis: auto;
+  width:30%;
 }
 
 .features-items {
@@ -851,12 +911,24 @@ padding-left:50px;
 .mission .content-wrapper{
   display:flex;
   justify-content: center;
-  margin:50px 100px 50px 100px
+  margin:50px 100px 50px 100px;
 }
 
 .mission h1, .contact-section .content-wrapper h1{
   display:flex;
   width:100%;
+}
+
+.contact-section{
+  margin:0;
+}
+
+.contact-section h1{
+  padding-left:100px;
+}
+
+.contact-section address{
+  width:30%;
 }
 
 .contact-section address #facilitator{
@@ -866,14 +938,20 @@ padding-left:50px;
 .contact-section .content-wrapper{
   display:flex;
   justify-content:space-evenly;
-  margin: 115px;}
+  margin:0;
+}
 
 .contact-section address h3{
   text-align: center;
   padding-right:75px;
 }
 
+
 /**FAQ PAGE**/
+
+.faq .content-wrapper{
+  margin:50px 0 50px 0;
+}
 
 .faq, .faq .content-wrapper{
   display:flex;
@@ -881,19 +959,20 @@ padding-left:50px;
   width:100%;
 }
 
-.faq h1{
-  width:100%;
+.faq .content-wrapper h1{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
 }
+
 .questions-content{
   display:flex;
   justify-content: space-between;
+  margin:0;
 }
-
-
-}
-
 
     }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
