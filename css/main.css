@@ -163,11 +163,11 @@ p {
 }
 
 img {
- 
+ width:100%;
 }
  
 figure {
- 
+ margin:0;
 }
  
 address {
@@ -199,13 +199,29 @@ header, footer {
     
 }
 
+.hero-area{
+ background: url("../img/hero.jpg") center no-repeat #333;
+ background-size:cover;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ flex-flow: row wrap;
+ min-height:500px;
+}
+
+.features{
+  background:url("../img/camp.jpg")  center no-repeat #333;
+  background-size:cover;
+  display:flex;
+  flex-flow:row wrap;
+  width:100%;
+}
 /****************HEADER STYLES*************/
 
 header {
   padding:15px 0;
 }
 
-.hero-area{}
 
 header .content-wrapper {
   display:flex;
@@ -332,13 +348,13 @@ input[type=button] {
 
 /*****MAIN*****/
 
-.hero-area {}
 
 #slogan {
-  margin:15px;
-  padding:15px;
+  
+  padding:0 0 200px 15px;
 }
- 
+
+
 /*****aside section*****/
 
 .aside {
@@ -407,18 +423,25 @@ article {
 .reviews {
   display:flex;
   flex-flow:row wrap;
+  background-color: #2a423a;
 }
 
 .content-wrapper{
   display:flex;
   width:90%;
-  margin: 45px 15px 45px 15px;
+  margin: 0;
+  padding:0 0 15px 15px;
 }
 
-.reviews h3{
+.reviews h2{
   width:45%;
   padding-top:18px;
   padding-bottom: 25px;
+}
+
+.reviews img{
+  display:flex;
+  width:100%;
 }
 
 article #reviews {}
@@ -463,11 +486,13 @@ p {}
 
 /*****map section*****/
 
-figure []
+figure {}
 
 /*****contact section*****/
 
-.contact-section {}
+.contact-section{
+  background-color: #2a423a;
+}
 
 .content-wrapper h1 {}
 
@@ -674,13 +699,19 @@ header nav{
 
     /**Hero area**/
     
+    .hero-area{
+      display:flex;
+      align-items: flex-start;
+      padding-top:50px;
+      
+    }
     /**Aside**/
 
     aside .content-wrapper{
       display: flex;
       justify-content: center;
       flex-flow: row wrap;
-      margin:50px 0;
+      margin: 0;
       padding-left:100px;
       padding-bottom:30px;
     }
@@ -694,7 +725,9 @@ header nav{
     /**Features**/
 
     .features{
-      margin:50px;
+      display: flex;
+      justify-content: center;
+      margin:0;
     }
 
     .features article {
@@ -720,9 +753,13 @@ header nav{
 
     .reviews article div{
       width:50%;
-      padding-left:300px;
+      padding-left:25px;
     }
-
+    
+    .reviews img{
+      display:flex;
+      width:100%;
+    }
 
     /**ABOUT PAGE**/
 
@@ -749,7 +786,7 @@ header nav{
   /**Contact**/
 
   .contact-section{
-    margin: 100px 50px 100px 50px;
+    background-color: #2a423a;
   }
 
   .contact-section .content-wrapper h2 {
@@ -845,10 +882,10 @@ display: flex;
 }
 
 #slogan{
-  text-align: left;
   display: flex;
-  width: 30%;
-  padding-left: 100px;
+  width: 100%;
+  padding: 0 0 150px 100px;
+  justify-content: flex-start;
 }
 
 /**Aside**/
@@ -880,17 +917,21 @@ aside .content-wrapper .form-description, aside .content-wrapper .form {
 
 .features-items {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: row wrap;
   margin-left: 100px;
 }
 
 .features h2 {
 width: 60%;
-padding-left:50px;
+padding-left:100px;
 }
 
 /**Reviews**/
+
+.content-wrapper{
+  margin: 20px;
+}
 
 .reviews{
   display: flex;
@@ -900,8 +941,13 @@ padding-left:50px;
 .reviews article div{
   display:flex;
   width:50%;
-  flex-wrap:wrap;
-  margin: 25px 30px 35px 50px;
+  flex-flow:row wrap;
+}
+
+.reviews img{
+  display:flex;
+  justify-content: center;
+  width:80%;
 }
 
 /**ABOUT PAGE**/
@@ -919,6 +965,7 @@ padding-left:50px;
 
 .contact-section{
   margin:0;
+  background-color: #2a423a;
 }
 
 .contact-section h1{
