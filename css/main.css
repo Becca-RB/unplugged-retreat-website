@@ -434,7 +434,7 @@ article {
 }
 
 .reviews h2{
-  width:45%;
+  width:75%;
   padding-top:18px;
   padding-bottom: 25px;
 }
@@ -745,15 +745,32 @@ header nav{
 
     /**Reviews**/
 
+    .reviews {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: #2a423a;}
+
     .reviews article{
       display:flex;
       justify-content: center;
       
     }
+    
+    .reviews h1{
+      width:75%;
+    }
 
     .reviews article div{
       width:50%;
       padding-left:25px;
+    }
+
+    .reviews h2 {
+      width:75%;
+      margin:0;
+      padding-bottom:0;
+      padding-top:0;
     }
     
     .reviews img{
@@ -866,6 +883,10 @@ display: flex;
 
   /**Footer**/
    
+  footer .content-wrapper{
+    display:flex;
+    justify-content: center;
+  }
   footer .content-wrapper .footer-content{
     display:flex;
     justify-content: space-evenly;
@@ -929,8 +950,14 @@ padding-left:100px;
 
 /**Reviews**/
 
-.content-wrapper{
+.reviews h1{
+  padding-bottom:50px;
+}
+.reviews .content-wrapper{
   margin: 20px;
+  max-width: 960px;
+  display:flex;
+
 }
 
 .reviews{
@@ -942,12 +969,13 @@ padding-left:100px;
   display:flex;
   width:50%;
   flex-flow:row wrap;
+  align-content: flex-start;
 }
 
 .reviews img{
   display:flex;
   justify-content: center;
-  width:80%;
+  width:75%;
 }
 
 /**ABOUT PAGE**/
