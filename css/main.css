@@ -815,6 +815,11 @@ header nav{
     margin:50px;
   }
   
+  /**Map**/
+
+  .map figure{
+    padding-bottom:45%;
+  }
   /**Contact**/
 
   .contact-section{
@@ -995,6 +1000,7 @@ padding-left:100px;
 
 /**ABOUT PAGE**/
 
+/**Mission**/
 .mission .content-wrapper{
   display:flex;
   justify-content: center;
@@ -1006,6 +1012,13 @@ padding-left:100px;
   width:100%;
 }
 
+/**Map**/
+
+.map figure{
+  padding-bottom: 35%;
+}
+
+/**Contact**/
 .contact-section{
   margin:0;
   background-color: #2a423a;
