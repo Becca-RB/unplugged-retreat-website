@@ -383,6 +383,13 @@ input[type=button] {
   
 }
 
+.features i {
+  display:flex;
+  justify-content: center;
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .content-wrapper{
   width:90%;
 }
@@ -415,7 +422,7 @@ article {
 }
 
 .features-item-description {
-  
+  padding-left:25px;
 }
 
 /*****reviews section*****/
@@ -745,17 +752,30 @@ header nav{
       margin:0;
     }
 
+    .features-items {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-flow: row wrap;
+    }
+
+
     .features article {
       display:flex;
       justify-content: center;
       align-items:center;
-      flex-flow:row wrap;
+      flex-flow:column;
       width:50%;
-      flex-basis:250px;
+      flex-basis:250x;
     }
 
     .features .features-item-description{
       width:50%;
+
+    }
+    
+    .fontawesome-icon{
+      padding-right:20px;
     }
 
     /**Reviews**/
