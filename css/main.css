@@ -746,6 +746,10 @@ header nav{
     }
 
     /**Reviews**/
+    
+    .reviews .figure{
+      width:80%;
+    }
 
     .reviews {
     display: flex;
@@ -821,6 +825,7 @@ header nav{
       display:flex;
       justify-content:center;
       align-items:center;
+  
 }
 
 .contact-section .content-wrapper h3{
@@ -1039,7 +1044,6 @@ padding-left:100px;
   justify-content:space-evenly;
   margin:0;
 }
-
 
 /**FAQ PAGE**/
 
