@@ -238,6 +238,7 @@ header nav {
      flex-wrap: row wrap;
      width:60%;
      margin-right: 50px;
+     padding-right:30px;
 }
 
 header nav ul {
@@ -464,6 +465,7 @@ h2 {
 .mission-content h1 {
   margin:0;
   padding-bottom:15px;
+
 }
 
 .mission-content p {
@@ -624,7 +626,7 @@ header nav{
     }
      
     /**HEADER**/
-    
+
     header{
       display:flex;
       justify-content: center;
@@ -671,7 +673,7 @@ header nav{
 
   footer .contact {
       margin-bottom: 0;
-      padding:0 125px;
+      padding:0 90px;
   }
 
   footer .copyright {
@@ -777,8 +779,13 @@ header nav{
       margin:0;
       padding-bottom:0;
       padding-top:0;
+      font-size:1.25em;
     }
     
+    .reviews p{
+      font-size: .75em;
+    }
+
     .reviews img{
       display:flex;
       width:100%;
@@ -788,7 +795,15 @@ header nav{
 
     /**Mission**/
 
-    .mission-content {
+  .contact-section{
+    padding-top:25px;
+  }
+  
+  .contact-section h1{
+    padding-left:60px;
+  }
+
+  .mission-content {
       display:flex;
       justify-content: space-between;
       align-items: center;
@@ -984,6 +999,14 @@ padding-left:100px;
 .reviews{
   display: flex;
   justify-content: center;
+}
+
+.reviews h2{
+  font-size:1.75em;
+}
+
+.reviews p{
+  font-size:1em;
 }
 
 .reviews article div{
